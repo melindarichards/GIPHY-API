@@ -45,6 +45,8 @@
 			// Bringing in data from GIPHY
 
 				$(document).on("click", ".characters", function(){
+					// Deletes the character buttons prior to adding new character buttons
+				$("#gifLocation").empty();
 					var c = $(this).data("name");
 					console.log(c);
 
@@ -53,6 +55,7 @@
 
 					$.ajax({url:queryURL,method: 'GET'})
 					.done(function(response){
+						console.log(response);
 						for(var i=0;i<response.data.length;i++){
 								var characterDiv = $('<div>');
 								var r = $('<p>').text("Rating: "+response.data[i].rating);
