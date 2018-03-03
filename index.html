@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>LOTR</title>
+	<style type="text/css">
+		button,
+		div,
+		form,
+		input {
+			margin: 10px;
+		}
+	</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>The Lord of the Rings</h1>
+
+		<!-- Characters are here -->
+		<div id="characters-view"></div>
+
+<!-- Rendered buttons are here -->
+<div id="characters-view"></div>
+
+		<form id="newCharacter-form">
+			<label for="newCharacter-input">Add a character</label>
+			<input type="text" id="newCharacter-input">
+			<br>
+
+			<!-- Button triggers new character to be added -->
+			<input id="add-newCharacter" type="submit" value="Submit">
+		</form>
+
+		<div id="gifLocation"></div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript.js">
+
+		</script>
+	</div>
+</body>
+
+</html>
