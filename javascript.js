@@ -50,7 +50,7 @@
 					var c = $(this).data("name");
 					console.log(c);
 
-					var queryURL = "http://api.giphy.com/v1/gifs/search?q="+c+"&api_key=hU5ACVgA5Rzc6WQFgIyWUjkFgcACmzKi&limit=10";
+					var queryURL = "//api.giphy.com/v1/gifs/search?q="+c+"&api_key=hU5ACVgA5Rzc6WQFgIyWUjkFgcACmzKi&limit=10";
 					console.log(queryURL);
 
 					$.ajax({url:queryURL,method: 'GET'})
